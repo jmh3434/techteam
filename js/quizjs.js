@@ -58,11 +58,10 @@
 
           $submit = $('#emc-submit');
           $returnt = $('#emc-ttelevate')
-          var result = "http://www.google.com/";
-          $('#emc-ttelevate').attr('href', result);
+
 
           $('#emc-ttelevate').click(function(){
-             window.location.href='index.html';
+             window.location.href='contact.html';
           })
 
       if (settings.progress) {
@@ -75,6 +74,8 @@
 
 
         $submit.click( function(){
+          var result = "http://www.google.com/";
+          $('#emc-ttelevate').attr('href', result);
           $returnt.addClass('ready-show');
           return scoreNormal();
 
@@ -111,5 +112,5 @@
 
 
 $(document).emc({
-  key: ["2","1","2","2","2","2","1", "1"]
+  key: ["3","1","2","2","2","2","1", "1"]
 });

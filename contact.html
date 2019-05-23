@@ -46,7 +46,6 @@
 			<div class="header-right">
 				<ul class="main-menu">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About us</a></li>
 					<li class="active"><a href="contact.html">Contact</a></li>
 					<li><a href="quiz.html">Onboarding Quiz</a></li>
 				</ul>
@@ -73,7 +72,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 contact-text">
-					<h4 class="contact-title">Contact us</h4>
+					<h4 class="contact-title">Contact us to register for class!</h4>
 					<p>We want to hear from you!</p>
 					<div class="contact-info">
 						<div class="ci-icon">
@@ -95,94 +94,38 @@
 					</div>
 				</div>
 				<div class="col-lg-6">
-					<h4 class="contact-title">Get in touch</h4>
-					<form class="contact-form">
-						<input type="text" placeholder="Name">
-						<input type="email" placeholder="E-mail">
-						<input type="text" placeholder="Subject">
-						<textarea placeholder="Message"></textarea>
-						<button class="site-btn sb-c1">Submit</button>
+					<h4 class="contact-title">Or, simply submit this form below</h4>
+
+					<form class="contact-form" action="mail_handler.php" role="form" name="contactform" method="post" >
+
+						<input type="text" name="first_name" placeholder="First Name">
+						<input type="text" name="last_name" placeholder="Last Name">
+						<input type="email" name="email" placeholder="Email Address">
+						<input type="text" name="telephone" placeholder="Telephone">
+						<input type="text" name="comments" placeholder="Comments">
+						<!-- <textarea placeholder="Comments"></textarea>dd -->
+
+						<button type="submit" name="submit">Sign up</button>
 					</form>
+					<!-- <form class="contact-form" action="mail_handler.php" method="post">
+					First Name: <input type="text" name="first_name"><br>
+					Lasts Name: <input type="text" name="last_name"><br>
+					Email: <input type="text" name="email"><br>
+					Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+					<input type="submit" name="submit" value="Submit">
+					</form> -->
+
 				</div>
 			</div>
-			<div class="map">
+			<!-- <div class="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10784.188505644011!2d19.053119335158936!3d47.48899529453826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1543907528304" style="border:0" allowfullscreen></iframe>
-			</div>
+			</div> dx-->
 		</div>
 	</section>
 	<!-- Services section end -->
 
 
 
-	<!-- Footer top section -->
-	<section class="footer-top-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-12">
-					<div class="footer-widget about-widget">
-						<img src="img/logo.png" alt="">
-						<p>Sed ultrices interdum libero, laoreet facilisis dui fringilla ut. Nullam nisi sem, tristique ut sapien nec, tempus auctor purus. Maecenas eu lectus non dolor euismod dignissim vitae vel tortor. </p>
-						<div class="social-links">
-							<a href="#"><i class="fa fa-pinterest"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-4">
-					<div class="footer-widget">
-						<h5 class="fw-title">Our Products</h5>
-						<ul>
-							<li><a href="#">Web Hosting</a></li>
-							<li><a href="#">Reseller Hosting</a></li>
-							<li><a href="#">VPS Hosting</a></li>
-							<li><a href="#">Dedicated Servers</a></li>
-							<li><a href="#">Windows Hosting</a></li>
-							<li><a href="#">Cloud Hosting</a></li>
-							<li><a href="#">Linux Servers</a></li>
-							<li><a href="#">WordPress Hosting</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-4">
-					<div class="footer-widget">
-						<h5 class="fw-title">Our Solutions</h5>
-						<ul>
-							<li><a href="">Reseller Hosting</a></li>
-							<li><a href="">WordPress Hosting</a></li>
-							<li><a href="">VPS Hosting</a></li>
-							<li><a href="">Dedicated Servers</a></li>
-							<li><a href="">Windows Hosting</a></li>
-							<li><a href="">Cloud Hosting</a></li>
-							<li><a href="">Linux Servers</a></li>
-							<li><a href="">Web Hosting</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-4">
-					<div class="footer-widget">
-						<h5 class="fw-title">Our Products</h5>
-						<ul>
-							<li><a href="#">Dedicated Servers</a></li>
-							<li><a href="#">Windows Hosting</a></li>
-							<li><a href="#">Cloud Hosting</a></li>
-						</ul>
-					</div>
-					<div class="footer-widget">
-						<h5 class="fw-title">Company</h5>
-						<ul>
-							<li><a href="#">Dedicated Servers</a></li>
-							<li><a href="#">Windows Hosting</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Footer top section end -->
 
 
 
@@ -192,10 +135,8 @@
 			<div class="footer-nav">
 				<ul>
 					<li><a href="home.html">Home</a></li>
-					<li><a href="about.html">About us</a></li>
-					<li><a href="service.html">Services</a></li>
-					<li><a href="blog.html">News</a></li>
 					<li><a href="contact.html">Contact</a></li>
+					<li><a href="quiz.html">Onboarding Quiz</a></li>
 				</ul>
 			</div>
 			<div class="copyright">
