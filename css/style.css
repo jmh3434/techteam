@@ -396,7 +396,7 @@ ol {
 
 .header-section {
 	background: rgba(0, 0, 0, 0.63);
-	padding: 54px 0px;
+	padding: 34px 0px;
 	border-bottom: 2px solid #25ae88;
 	position: absolute;
 	width: 100%;
@@ -1561,7 +1561,7 @@ ol {
 
 @media only screen and (max-width: 767px) {
 	.header-section {
-		padding: 35px 0px;
+		padding: 15px 0px;
 	}
 	.header-section .header-right {
 		position: fixed;
@@ -1630,7 +1630,7 @@ ol {
 	}
 	.main-menu {
 		margin-left: 0;
-		padding-top: 0;
+		padding-top: 40;
 		display: block;
 		margin-bottom: 80px;
 	}
@@ -1765,7 +1765,7 @@ ol {
 
 @media only screen and (max-width: 479px) {
 	.hs-item h2 {
-		font-size: 45px;
+		font-size: 36px;
 	}
 	.section-title h2,
 	.page-top-section h2 {
@@ -1806,9 +1806,7 @@ ol {
     top: 60%;
     transform: translateY(-50%);
 }
- .carousel-caption h2 {
-	color: #ffffff;
-
+#smoke .d-block {
 
 
 }
