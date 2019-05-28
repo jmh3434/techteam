@@ -61,7 +61,7 @@
 
 
           $('#emc-ttelevate').click(function(){
-             window.location.href='contact.html';
+             window.location.href='contact.php';
           })
 
       if (settings.progress) {
@@ -103,7 +103,7 @@
       });
 
       score = ((itemCount - wrong.length) / itemCount).toFixed(2) * 100 + "%";
-      $scoreEl.text("You scored a "+score).addClass('new-score');
+      $scoreEl.text("You knew "+score+" of the questions. Write this score down! Tech Team's Elevate teachers use this score to help evaluate how we can assist you later!").addClass('new-score');
       $('html,body').animate({scrollTop: 0}, 50);
     }
 
@@ -112,5 +112,5 @@
 
 
 $(document).emc({
-  key: ["3","1","2","2","2","2","1", "1"]
+  key: ["1","1","1","1","1","1","1", "1"]
 });
